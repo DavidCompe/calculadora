@@ -14,7 +14,8 @@ function deleteLast() {
 
 function calculate() {
     try {
-        display.value = eval(display.value);
+        const result = eval(display.value);
+        display.value = `${result} veces en tu cara`;
     } catch (error) {
         display.value = 'Error';
     }
